@@ -1,0 +1,40 @@
+[
+{
+    "actions": [
+        {
+            "type": "Action.OpenUrl",
+            "url": "[BUTTON_LEFT_URL]",
+            "title": "[BUTTON_LEFT_TEXT]",
+            "iconUrl": "[BUTTON_LEFT_ICON]"
+        },
+        {
+            "title": "[BUTTON_RIGHT_TEXT]",
+            "type": "Action.OpenUrl",
+            "url": "[BUTTON_RIGHT_URL]",
+            "iconUrl": "[BUTTON_RIGHT_ICON]"
+        }
+    ],
+    "type": "ActionSet",
+    "targetWidth": "AtLeast:Narrow",
+    "spacing": "ExtraLarge"
+},
+{
+    "actions": [
+        {
+            "title": "[BUTTON_LEFT_TEXT]",
+            "type": "Action.OpenUrl",
+            "url": "[BUTTON_LEFT_URL]",
+            "iconUrl": "[BUTTON_LEFT_ICON]"
+        },
+        {
+            "type": "Action.OpenUrl",
+            "url": "[BUTTON_RIGHT_URL]",
+            "iconUrl": "[BUTTON_RIGHT_ICON]",
+            "title": "[BUTTON_RIGHT_TEXT]"
+        }
+    ],
+    "type": "ActionSet",
+    "targetWidth": "VeryNarrow",
+    "spacing": "ExtraLarge"
+}
+]

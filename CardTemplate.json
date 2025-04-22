@@ -1,0 +1,364 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "inlines": [
+                {
+                    "type": "TextRun",
+                    "size": "Small",
+                    "text": "[PROJECT_NAME_BREADCRUMB_NAVBAR]",
+                    "selectAction": {
+                        "url": "[PROJECT_URL_BREADCRUMB_NAVBAR]",
+                        "type": "Action.OpenUrl"
+                    }
+                }
+            ],
+            "type": "RichTextBlock"
+        },
+        {
+            "columns": [
+                {
+                    "width": "auto",
+                    "items": [
+                        {
+                            "type": "Icon",
+                            "name": "Branch",
+                            "color": "Accent"
+                        }
+                    ],
+                    "type": "Column"
+                },
+                {
+                    "width": "stretch",
+                    "items": [
+                        {
+                            "size": "Large",
+                            "weight": "Bolder",
+                            "wrap": true,
+                            "type": "TextBlock",
+                            "text": "[TEXT_HEADLINE_LARGE]"
+                        }
+                    ],
+                    "verticalContentAlignment": "Center",
+                    "spacing": "Small",
+                    "type": "Column"
+                }
+            ],
+            "spacing": "Small",
+            "type": "ColumnSet"
+        },
+        {
+            "type": "Table",
+            "targetWidth": "AtLeast:Narrow",
+            "columns": [
+                {
+                    "width": 1
+                },
+                {
+                    "width": 2
+                }
+            ],
+            "rows": [
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Status",
+                                    "wrap": true,
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "[STATUS_TEXT_ROW_WIDE]",
+                                    "wrap": true
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Date",
+                                    "wrap": true,
+                                    "weight": "Bolder"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "[DATE_TIME_STRING_WIDE]",
+                                    "wrap": true
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Revision",
+                                    "wrap": true,
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "auto",
+                                            "items": [
+                                                {
+                                                    "type": "Icon",
+                                                    "name": "Flag",
+                                                    "color": "Attention",
+                                                    "size": "xSmall",
+                                                    "horizontalAlignment": "Center"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "color": "Attention",
+                                                    "text": "[REVISION_NUMBER_STRING_WIDE]",
+                                                    "wrap": true,
+                                                    "spacing": "Small",
+                                                    "type": "TextBlock"
+                                                }
+                                            ],
+                                            "spacing": "Small"
+                                        }
+                                    ],
+                                    "spacing": "Small"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        }
+                    ]
+                },
+                {
+                    "type": "TableRow",
+                    "cells": [
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "Platform",
+                                    "wrap": true,
+                                    "weight": "Bolder"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "TableCell",
+                            "items": [
+                                {
+                                    "type": "ColumnSet",
+                                    "columns": [
+                                        {
+                                            "type": "Column",
+                                            "width": "auto",
+                                            "items": [
+                                                {
+                                                    "type": "Image",
+                                                    "url": "[TARGET_PLATFORM_ICON_URL_WIDE]",
+                                                    "width": "16px"
+                                                }
+                                            ],
+                                            "verticalContentAlignment": "Center",
+                                            "horizontalAlignment": "Center"
+                                        },
+                                        {
+                                            "type": "Column",
+                                            "width": "stretch",
+                                            "items": [
+                                                {
+                                                    "type": "TextBlock",
+                                                    "text": "[TARGET_PLATFORM_STRING_WIDE]",
+                                                    "wrap": true
+                                                }
+                                            ],
+                                            "spacing": "Small"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "firstRowAsHeaders": false,
+            "showGridLines": false
+        },
+        {
+            "type": "Container",
+            "targetWidth": "VeryNarrow",
+            "items": [
+                {
+                    "text": "Status",
+                    "weight": "Bolder",
+                    "wrap": true,
+                    "type": "TextBlock"
+                },
+                {
+                    "text": "[STATUS_TEXT_ROW_NARROW]",
+                    "wrap": true,
+                    "type": "TextBlock",
+                    "spacing": "None"
+                },
+                {
+                    "text": "Date",
+                    "weight": "Bolder",
+                    "wrap": true,
+                    "spacing": "Small",
+                    "type": "TextBlock"
+                },
+                {
+                    "text": "[DATE_TIME_STRING_NARROW]",
+                    "wrap": true,
+                    "spacing": "None",
+                    "type": "TextBlock"
+                },
+                {
+                    "text": "Revision",
+                    "weight": "Bolder",
+                    "wrap": true,
+                    "spacing": "Small",
+                    "type": "TextBlock"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Icon",
+                                    "name": "Flag",
+                                    "color": "Attention",
+                                    "size": "xSmall",
+                                    "horizontalAlignment": "Center"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "color": "Attention",
+                                    "text": "[REVISION_NUMBER_STRING_NARROW]",
+                                    "wrap": true,
+                                    "spacing": "Small",
+                                    "type": "TextBlock"
+                                }
+                            ],
+                            "spacing": "Small"
+                        }
+                    ],
+                    "spacing": "None"
+                },
+                {
+                    "text": "Platform",
+                    "weight": "Bolder",
+                    "wrap": true,
+                    "spacing": "Small",
+                    "type": "TextBlock"
+                },
+                {
+                    "type": "ColumnSet",
+                    "columns": [
+                        {
+                            "type": "Column",
+                            "width": "auto",
+                            "items": [
+                                {
+                                    "type": "Image",
+                                    "width": "16px",
+                                    "url": "[TARGET_PLATFORM_ICON_URL_NARROW]"
+                                }
+                            ],
+                            "verticalContentAlignment": "Center",
+                            "horizontalAlignment": "Center"
+                        },
+                        {
+                            "type": "Column",
+                            "width": "stretch",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "[TARGET_PLATFORM_STRING_NARROW]",
+                                    "wrap": true
+                                }
+                            ],
+                            "spacing": "Small"
+                        }
+                    ],
+                    "spacing": "None"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Notes",
+                    "wrap": true,
+                    "weight": "Bolder"
+                },
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "[OPTIONAL_NOTE_RICHTEXTBLOCK]"
+                        }
+                    ],
+                    "id": "BottomOptionalNotes",
+                    "separator": true
+                }
+            ]
+        }
+        
+    ],
+    "$schema": "https://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.5"
+}
