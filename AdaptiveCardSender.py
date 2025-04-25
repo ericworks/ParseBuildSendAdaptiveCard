@@ -11,3 +11,4 @@ def send_requests(url: str, card_request: dict):
 
     resp = requests.post(url, json=request_template)
     print(f"Request Response: " + str(resp.status_code) + ", " + resp.text)
+    resp.raise_for_status()

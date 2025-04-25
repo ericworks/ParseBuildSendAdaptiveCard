@@ -10,7 +10,10 @@ if __name__ == "__main__":
     print("Author: Eric YOU")
     print("===========================================")
     print("")
-    card, webhook = AdaptiveCardBuilder.make_card()
-    
-    AdaptiveCardSender.send_requests(webhook, card)
-
+    try:
+        card, webhook = AdaptiveCardBuilder.make_card()
+        AdaptiveCardSender.send_requests(webhook, card)
+    except Exception as e:
+        print(f"Error: {e}")
+        print("Error: Please check your parameters and try again.")
+        exit(1)
